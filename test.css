@@ -1,0 +1,20 @@
+.ab{
+background-color: blue;
+
+height: 700px;
+width: 700px;
+display: grid;
+grid-template-rows:60% 10% 20%;
+
+}
+.ab #a1{
+background-color: aqua;
+}
+.ab #a2{
+    background-color: rgb(225, 19, 60);
+    
+    }
+.ab #a3{
+        background-color: rgb(188, 204, 17);
+        
+        }
