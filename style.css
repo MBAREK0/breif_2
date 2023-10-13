@@ -16,7 +16,7 @@ header {
 }
 .logo-input {
   display: flex;
-  flex-wrap:nowrap;
+  flex-wrap: nowrap;
 }
 .list {
   align-items: center;
@@ -48,6 +48,9 @@ header input {
   text-decoration: none;
   color: black;
   list-style-type: none;
+}
+.list-pic ul li a {
+  color: #94a3b8;
 }
 ul li a,
 #flag,
@@ -81,7 +84,7 @@ header h2 {
 }
 .list-pic #slier {
   margin-top: 15px;
-  width: 800px;
+  width: 1013px;
   height: 473px;
 }
 
@@ -223,21 +226,21 @@ footer p {
 #keyword span {
   color: #a9a104;
 }
-#radio{
+#radio {
   display: flex;
   justify-content: flex-start;
   margin-left: 70px;
- gap: 100px;
- margin-bottom: 10px;
+  gap: 100px;
+  margin-bottom: 10px;
 }
-#radio div{
- border: 1px solid black;
- border-radius: 19px;
- padding: 6px 10px;
- display: flex;
- align-items: center;
+#radio div {
+  border: 1px solid rgb(164, 158, 158);
+  border-radius: 19px;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
 }
-#radio span{
+#radio span {
   color: #b3c20b;
   font-size: 25px;
 }
@@ -253,20 +256,40 @@ footer p {
 #range input {
   accent-color: #b3c20b;
 }
-main {
+#span1{
+  margin-left: 35px;
+}
+#span2{
+  margin-left: 90px;
+}
+#mainn {
   display: grid;
   grid-template-columns: 25% 1fr;
 }
-#part-rest{
+#part-rest {
   display: grid;
-grid-template-columns: 1fr 1fr 1fr;  
-justify-content: center;
-gap: 15px;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  gap: 15px;
 }
-.groub3{
+.groub3 {
   width: 100%;
 }
-#main_75{
+#main_75 {
   display: grid;
   grid-template-rows: 2% 1fr;
+  margin-top: 25px;
+}
+.threepoint {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 100px;
+}
+.threepoint div {
+  border: 1px solid none;
+  background-color: #e2e8f0;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
 }
