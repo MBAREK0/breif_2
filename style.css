@@ -225,14 +225,21 @@ footer p {
 }
 #radio{
   display: flex;
-  justify-content: center;
- gap: 10px;
+  justify-content: flex-start;
+  margin-left: 70px;
+ gap: 100px;
+ margin-bottom: 10px;
 }
 #radio div{
  border: 1px solid black;
  border-radius: 19px;
- padding: 0 20px;
+ padding: 6px 10px;
+ display: flex;
  align-items: center;
+}
+#radio span{
+  color: #b3c20b;
+  font-size: 25px;
 }
 .checkbox {
   display: flex;
