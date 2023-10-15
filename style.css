@@ -218,6 +218,9 @@ footer p {
   justify-content: space-around;
   align-items: center;
 }
+#select{
+  margin-top: 15px;
+}
 #select select {
   padding: 0 40px;
   height: 30px;
@@ -444,8 +447,8 @@ footer p {
   display: flex;
   align-items: center;
   gap: 5px;
-
   justify-content: flex-start;
+  margin-top: 10px;
 }
 #dv_plus1 p {
   font-size: 30px;
@@ -485,13 +488,15 @@ footer p {
   background-color: #2ab408;
   height: 50px;
   width: 325px;
+  position: relative;
 }
 #add_to_cart p {
   color: #eee;
   font-size: larger;
   text-align: center;
-  position: relative;
-  bottom: 5px;
+  position: absolute;
+  top: 13px;
+left:115px;
   
 }
 #buy_now {
@@ -499,17 +504,20 @@ footer p {
   height: 50px;
   width: 325px;
   margin-top: 10px;
+  position: relative;
 }
 #buy_now p {
   color: #2ab408;
   font-size: larger;
   text-align: center;
-  position: relative;
-  bottom: 5px;
+  position: absolute;
+top: 13px;
+left:130px;
 }
 .chat_shere {
   display: flex;
   justify-content: space-around;
+  margin-top: 10px;
 }
 .comment {
   display: flex;
@@ -535,5 +543,65 @@ footer p {
   gap: 10px;
 }
 .text_with_img img{
-  width:643px;
+  width:637px;
+ 
+}
+#button_fiveStars{
+  display: flex;
+  border: 1px solid #EAB308;
+  background-color: #EAB308;
+  align-items: center;
+  gap: 5px;
+  color: #fff;
+  width:fit-content;
+  padding: 5px 15px;
+  margin-left: 5px;
+  border-radius: 20px;
+}
+#button_fiveStars p{
+  margin: 0;
+}
+.section3_1{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;/*__________________________*/
+  gap: 20px;
+}
+.range_1 input{
+  accent-color:#EAB308 ;
+  width: 200px;
+  margin-bottom: 10px;
+}
+.profile_name_stars{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.profile_name{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.profile_name img{
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}
+.name h1,p{
+  margin:0;
+}
+.comentaire{
+  margin-left: 200px;
+  font-weight: 100px;
+}
+.section3{
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+#last_groub{
+  display: flex;
+  gap: 10px;
 }
