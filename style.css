@@ -27,13 +27,20 @@ header {
   width: 60px;
   height: 60px;
 }
-header input {
+header .input_search input {
   padding-left: 10px;
   margin-left: 10px;
   width: 650px;
   height: 60px;
   border-radius: 10px;
   border-color: rgba(0, 0, 0, 0.534);
+  position: relative;
+}
+.input_search a i{
+  position: absolute;
+  top: 40%;
+ left: 54%;
+ color: rgba(0, 0, 0, 0.234);
 }
 #flag {
   width: 60px;
@@ -84,7 +91,7 @@ header h2 {
 }
 .list-pic #slier {
   margin-top: 15px;
-  width: 1013px;
+  width: 927px;
   height: 473px;
 }
 
@@ -102,6 +109,7 @@ header h2 {
   flex-direction: column;
   gap: 10px;
   width: 316px;
+
 }
 .prix {
   display: flex;
@@ -170,7 +178,6 @@ header h2 {
 }
 
 .groub1 {
- 
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -218,7 +225,7 @@ footer p {
   justify-content: space-around;
   align-items: center;
 }
-#select{
+#select {
   margin-top: 15px;
 }
 #select select {
@@ -251,6 +258,9 @@ footer p {
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
+}
+.checkbox input {
+  accent-color: #0bc223;
 }
 #range {
   margin-top: 15px;
@@ -296,7 +306,7 @@ footer p {
   height: 20px;
   border-radius: 100%;
 }
-/* page_3 ___________________________*/
+/* page_3 _______________________________________________*/
 .section1 {
   margin-top: 100px;
   display: grid;
@@ -443,19 +453,19 @@ footer p {
 #in_stock p {
   font-size: larger;
 }
-#dv_plus1 {
+.dv_plus1 {
   display: flex;
   align-items: center;
   gap: 5px;
   justify-content: flex-start;
   margin-top: 10px;
 }
-#dv_plus1 p {
+.dv_plus1 p {
   font-size: 30px;
   font-weight: bold;
   margin: 0;
 }
-#dv_plus1 #moin {
+.dv_plus1 .moin {
   border: 1px solid none;
   background-color: #94a3b8;
   width: 40px;
@@ -463,13 +473,13 @@ footer p {
   border-radius: 100%;
   text-align: center;
 }
-#dv_plus1 #moin span {
+.dv_plus1 .moin span {
   position: relative;
   bottom: 15px;
   right: 2px;
   font-size: 52px;
 }
-#dv_plus1 #plus {
+.dv_plus1 .plus {
   border: 1px solid none;
   background-color: #c9bf08;
   width: 40px;
@@ -478,7 +488,7 @@ footer p {
   text-align: center;
   position: relative;
 }
-#dv_plus1 #plus span {
+.dv_plus1 .plus span {
   position: relative;
   font-size: 36px;
 }
@@ -496,8 +506,7 @@ footer p {
   text-align: center;
   position: absolute;
   top: 13px;
-left:115px;
-  
+  left: 115px;
 }
 #buy_now {
   border: 1px solid #2ab408;
@@ -511,8 +520,8 @@ left:115px;
   font-size: larger;
   text-align: center;
   position: absolute;
-top: 13px;
-left:130px;
+  top: 13px;
+  left: 130px;
 }
 .chat_shere {
   display: flex;
@@ -537,71 +546,196 @@ left:130px;
 .share i {
   font-size: 30px;
 }
-.text_with_img{
+.text_with_img {
   display: grid;
   grid-template-columns: 50% 50%;
   gap: 10px;
 }
-.text_with_img img{
-  width:637px;
- 
+.text_with_img img {
+  width: 637px;
 }
-#button_fiveStars{
+#button_fiveStars {
   display: flex;
-  border: 1px solid #EAB308;
-  background-color: #EAB308;
+  border: 1px solid #eab308;
+  background-color: #eab308;
   align-items: center;
   gap: 5px;
   color: #fff;
-  width:fit-content;
+  width: fit-content;
   padding: 5px 15px;
   margin-left: 5px;
   border-radius: 20px;
 }
-#button_fiveStars p{
+#button_fiveStars p {
   margin: 0;
 }
-.section3_1{
+.section3_1 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;/*__________________________*/
+  align-items: center; /*__________________________*/
   gap: 20px;
 }
-.range_1 input{
-  accent-color:#EAB308 ;
-  width: 200px;
-  margin-bottom: 10px;
-}
-.profile_name_stars{
+
+.profile_name_stars {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-.profile_name{
+.profile_name {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-.profile_name img{
+.profile_name img {
   width: 70px;
   height: 70px;
   border-radius: 100%;
 }
-.name h1,p{
-  margin:0;
+.name h1,
+p {
+  margin: 0;
 }
-.comentaire{
+.comentaire {
   margin-left: 200px;
   font-weight: 100px;
 }
-.section3{
+.section3 {
   margin-top: 40px;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 20px;
 }
-#last_groub{
+#last_groub {
   display: flex;
   gap: 10px;
+}
+.range_1{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 7px;
+}
+/* ==>payment=========================== */
+#pay_body{
+  min-height: 1000px;
+}
+#pay_footer{
+  position: relative;
+  top: 200px;
+}
+#select_all {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  width: 65%;
+  margin-top: 15px;
+}
+#select_all input {
+  accent-color: #0bc223;
+}
+.chek_product {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.chek_product input{
+  accent-color: #0bc223;
+}
+.tv {
+  width: 184px;
+  height: 145px;
+}
+.product_info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.product_info h1 {
+  margin: 0;
+}
+.product_info button {
+  border: 1px solid #d9d9d9;
+  width: fit-content;
+  height: 30px;
+  border-radius: 20px;
+}
+.pay_product {
+  display: flex;
+  align-items: center;
+  gap: 350px;
+}
+
+.delet_like_plus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.delet_like span {
+  font-size: 30px;
+}
+.trash{
+  font-size: 20px;
+}
+.delet_like {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+#product_border {
+  border: 1px solid black;
+  width: 65%;
+  padding: 15px 0;
+}
+.hh1 {
+  margin: 0;
+}
+#pay_border {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid black;
+  width: 30%;
+  height: 388px;
+  padding-left: 10px;
+  padding-top: 32px;
+}
+.us_1 {
+  display: flex;
+  gap: 190px;
+}
+#pay_border button {
+  width: 318px;
+  margin-left: 31px;
+  height: 51px;
+  background-color: #2ab408;
+  font-size: larger;
+  color: #fff;
+  margin-top: 60px;
+}
+#total {
+  display: flex;
+  gap: 208px;
+}
+#section_1_without_select_all{
+  display: flex;
+  gap: 52px;
+}
+/* ----------------- */
+.unique{
+  border: 1px solid #94a3b8;
+  width: 200px;
+  height: 5px;
+  background-color: #94a3b8;
+  position: relative;
+}
+.unique div{
+  border: 2px solid #eab308;
+  width: 100px;
+  height: 4px;
+  background-color: #eab308;
+  position: absolute;
+  left: -2px;
+ bottom: -1px;
 }
