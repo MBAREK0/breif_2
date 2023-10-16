@@ -457,8 +457,8 @@ footer p {
   padding: 10px 20px;
   margin-top: 5px;
   display: flex;
-    flex-direction: column;
-    gap: 5px;
+  flex-direction: column;
+  gap: 5px;
 }
 .in_stock p {
   font-size: larger;
@@ -564,7 +564,7 @@ footer p {
 .text_with_img img {
   width: 637px;
 }
-.progress{
+.progress {
   display: flex;
   border: 1px solid #eab308;
   background-color: #eab308;
@@ -765,12 +765,10 @@ p {
   gap: 208px;
   align-items: center;
 }
-.Payment_Methode{
-  margin: 10PX 0;
+.Payment_Methode {
+  margin: 10px 0;
 }
 .section_1_without_select_all {
   display: flex;
   gap: 52px;
 }
-/* ----------------- */
-
