@@ -14,6 +14,10 @@ header {
   top: 0;
   z-index: 99;
 }
+#shoping_5 {
+  color: #d9d9d9;
+  font-size: xx-large;
+}
 .logo-input {
   display: flex;
   flex-wrap: nowrap;
@@ -36,11 +40,11 @@ header .input_search input {
   border-color: rgba(0, 0, 0, 0.534);
   position: relative;
 }
-.input_search a i{
+.input_search a i {
   position: absolute;
   top: 40%;
- left: 54%;
- color: rgba(0, 0, 0, 0.234);
+  left: 54%;
+  color: rgba(0, 0, 0, 0.234);
 }
 #flag {
   width: 60px;
@@ -109,7 +113,6 @@ header h2 {
   flex-direction: column;
   gap: 10px;
   width: 316px;
-
 }
 .prix {
   display: flex;
@@ -610,17 +613,17 @@ p {
   display: flex;
   gap: 10px;
 }
-.range_1{
+.range_1 {
   display: flex;
   align-items: center;
   gap: 5px;
   margin-bottom: 7px;
 }
 /* ==>payment=========================== */
-#pay_body{
+#pay_body {
   min-height: 1000px;
 }
-#pay_footer{
+#pay_footer {
   position: relative;
   top: 200px;
 }
@@ -639,7 +642,7 @@ p {
   align-items: center;
   gap: 5px;
 }
-.chek_product input{
+.chek_product input {
   accent-color: #0bc223;
 }
 .tv {
@@ -674,7 +677,7 @@ p {
 .delet_like span {
   font-size: 30px;
 }
-.trash{
+.trash {
   font-size: 20px;
 }
 .delet_like {
@@ -718,24 +721,47 @@ p {
   display: flex;
   gap: 208px;
 }
-#section_1_without_select_all{
+#section_1_without_select_all {
   display: flex;
   gap: 52px;
 }
 /* ----------------- */
-.unique{
+.unique_50 {
   border: 1px solid #94a3b8;
   width: 200px;
   height: 5px;
   background-color: #94a3b8;
   position: relative;
 }
-.unique div{
+.unique_50 div {
   border: 2px solid #eab308;
   width: 100px;
   height: 4px;
   background-color: #eab308;
   position: absolute;
   left: -2px;
- bottom: -1px;
+  bottom: -1px;
+}
+.unique_30 {
+  border: 1px solid #94a3b8;
+  width: 200px;
+  height: 5px;
+  background-color: #94a3b8;
+  position: relative;
+}
+.unique_30 div {
+  border: 2px solid #eab308;
+  width: 60px;
+  height: 4px;
+  background-color: #eab308;
+  position: absolute;
+  left: -2px;
+  bottom: -1px;
+}
+.unique_0 {
+  border: 1px solid #94a3b8;
+  width: 200px;
+  height: 5px;
+  background-color: #94a3b8;
+  position: relative;
 }
