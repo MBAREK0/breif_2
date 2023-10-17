@@ -14,7 +14,7 @@ header {
   top: 0;
   z-index: 99;
 }
-#shoping_5 {
+.shoping_5 {
   color: #d9d9d9;
   font-size: xx-large;
 }
@@ -27,7 +27,7 @@ header {
   display: flex;
   gap: 10px;
 }
-#logo {
+.logo {
   width: 60px;
   height: 60px;
 }
@@ -46,11 +46,11 @@ header .input_search input {
   left: 54%;
   color: rgba(0, 0, 0, 0.234);
 }
-#flag {
+.flag {
   width: 60px;
   height: 60px;
 }
-#shoping_header {
+.shoping_header {
   width: 60px;
   height: 60px;
 }
@@ -336,7 +336,6 @@ footer p {
 .section1 .descreption div .button_5_star {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
   width: 80px;
   height: 30px;
   border-radius: 50px;
@@ -771,4 +770,10 @@ p {
 .section_1_without_select_all {
   display: flex;
   gap: 52px;
+}
+/* ----------- */
+.descreption{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
