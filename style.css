@@ -661,6 +661,11 @@ p {
   background-color: #94a3b8;
   position: relative;
 }
+.descreption{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 /* ==>payment=========================== */
 #pay_body {
   min-height: 1000px;
@@ -772,8 +777,4 @@ p {
   gap: 52px;
 }
 /* ----------- */
-.descreption{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
+
