@@ -237,8 +237,8 @@ footer ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 86px;
-  padding: 10px;
+  gap: 10%;
+  padding: 0.5%;
 }
 footer ul li a {
   color: #fff;
@@ -246,6 +246,7 @@ footer ul li a {
 footer p {
   color: #fff;
   text-align: center;
+  font-size: 1rem;
 }
 /* search _________________________________________________________________________________________________________________________ */
 .key-select {
@@ -490,8 +491,8 @@ footer p {
   top: 1%;
   right: 2%;
 }
-.morocco i,p{
-  font-size: 1em;
+.morocco p {
+  font-size: 1vw;
 }
 .second_rectangle {
   border: 1px solid gray;
@@ -551,6 +552,7 @@ footer p {
   background-color: #2ab408;
   height: 3vw;
   width: 21vw;
+  margin: 10px auto;
   position: relative;
 }
 .add_to_cart p {
@@ -567,6 +569,7 @@ footer p {
   width: 21vw;
   margin-top: 10px;
   position: relative;
+  margin: 10px auto;
 }
 .buy_now p {
   color: #2ab408;
@@ -632,7 +635,7 @@ footer p {
   align-items: center;
   justify-content: space-around;
 }
-.gold_stars img{
+.gold_stars img {
   width: 1em;
   height: 1em;
 }
@@ -743,8 +746,8 @@ p {
   accent-color: #0bc223;
 }
 .tv {
-  width: 184px;
-  height: 145px;
+  width: 14vw;
+  height: 11vw;
 }
 .product_info {
   display: flex;
@@ -756,14 +759,14 @@ p {
 }
 .product_info button {
   border: 1px solid #d9d9d9;
-  width: fit-content;
+  width: 8vw;
   height: 30px;
   border-radius: 20px;
 }
 .pay_product {
   display: flex;
-  align-items: center;
-  gap: 350px;
+  /* align-items: center; */
+  gap: 20vw;
 }
 
 .delet_like_plus {
@@ -778,10 +781,11 @@ p {
   font-size: 20px;
 }
 .delet_like {
-  margin-left: 30px;
+  /* margin-left: 30px; */
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 2vw;
+  align-self: center;
 }
 .product_border {
   border: 1px solid black;
@@ -798,25 +802,25 @@ p {
   border: 1px solid black;
   width: 30%;
   height: 388px;
-  padding-left: 10px;
-  padding-top: 32px;
+  padding-left: 1em;
+  padding-top: 2em;
 }
 .us_1 {
   display: flex;
-  gap: 190px;
+  gap: 11.7vw;
 }
 .pay_border button {
-  width: 318px;
-  margin-left: 31px;
-  height: 51px;
+  width: 22vw;
+  height: 3em;
   background-color: #2ab408;
-  font-size: larger;
+  font-size: large;
   color: #fff;
   margin-top: 20px;
+  align-self: center;
 }
 .total {
   display: flex;
-  gap: 208px;
+  gap: 11.2vw;
   align-items: center;
 }
 .Payment_Methode {
@@ -824,7 +828,7 @@ p {
 }
 .section_1_without_select_all {
   display: flex;
-  gap: 52px;
+  gap: 3em;
 }
 .second_rectangle_phone {
   display: none;
@@ -1148,7 +1152,7 @@ p {
     position: relative;
     margin: 20px 0 5px;
   }
-  #buy_paragraphe{
+  #buy_paragraphe {
     /* margin-right: 3em; */
   }
   /* ======================= */
@@ -1300,6 +1304,121 @@ p {
   .carts_groub2 {
     border-radius: 10px;
   }
+  /* payment */
+  .section_1_without_select_all {
+    flex-direction: column;
+  }
+  .select_all {
+    width: 100%;
+  }
+  .product_border {
+    width: 100%;
+  
+  }
+
+  .pay_border {
+    width: 95%;
+    margin: 0;
+    padding: 10px 2.5% 0 2.5%;
+  }
+  /*  .dv_plus1{
+    
+  } */
+  .delet_like_plus .dv_plus1 {
+    display: flex;
+    align-items: center;
+    gap: -0.75vw;
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+  .delet_like_plus .dv_plus1 p {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+  }
+  .delet_like_plus .dv_plus1 .moin {
+    border: 1px solid none;
+    background-color: #94a3b8;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    position: relative;
+    text-align: center;
+  }
+  .delet_like_plus .dv_plus1 .moin span {
+    position: relative;
+    bottom: 42%;
+    font-size: 2rem;
+  }
+  .delet_like_plus .dv_plus1 .plus {
+    border: 1px solid none;
+    background-color: #c9bf08;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    text-align: center;
+    position: relative;
+  }
+  .delet_like_plus .dv_plus1 .plus span {
+    position: absolute;
+    right: 12%;
+    top: -25%;
+    font-size: 2rem;
+  }
+  .chek_product .tv {
+    width: 54%;
+    height: 62%;
+  }
+  .product_info button {
+    width: 28vw;
+    height: 30px;
+  }
+  .product_info h1{
+    font-size: 5vw;
+  }
+  .chek_product input {
+    height: 20px !important;
+    width: 27px;
+  }
+  .pay_product {
+    /* display: flex;
+    /* align-items: center; */
+    gap: 5px;
+    flex-direction: column;
+  }
+  .product_info {
+    gap: 4vw;
+  }
+  .delet_like_plus{
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 18%;
+    margin-left: 10%;
+  }
+  .delet_like_plus .dv_plus1{
+    margin: 0;
+  }
+  .us_1 {
+    gap:49%;
+}
+.total{
+gap: 50%;
+}
+.pay_border button {
+  width: 85vw;
+  align-self: center;
+}
+.delet_like{
+  gap: 21px;
+}
+.delet_like span {
+  font-size: 2rem;
+  margin-bottom: 6px;
+}
+.trash{
+  font-size: 1.4rem;
+}
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   body {
@@ -1735,4 +1854,116 @@ p {
   .carts_groub2 {
     border-radius: 10px;
   }
+   /* payment----------------------------------------------------------------------------------------------------------------------------- */
+   .section_1_without_select_all {
+    flex-direction: row;
+  }
+  .select_all {
+    width: 55%;
+  }
+  .product_border {
+    width: 55%;
+  }
+
+  .pay_border {
+    width: 35%;
+    margin: 0;
+    padding: 10px 2.5% 0 2.5%;
+  }
+  /*  .dv_plus1{
+    
+  } */
+  .delet_like_plus .dv_plus1 {
+    display: flex;
+    align-items: center;
+    gap: -0.75vw;
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+  .delet_like_plus .dv_plus1 p {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+  }
+  .delet_like_plus .dv_plus1 .moin {
+    border: 1px solid none;
+    background-color: #94a3b8;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    position: relative;
+    text-align: center;
+  }
+  .delet_like_plus .dv_plus1 .moin span {
+    position: relative;
+    bottom: 42%;
+    font-size: 2rem;
+  }
+  .delet_like_plus .dv_plus1 .plus {
+    border: 1px solid none;
+    background-color: #c9bf08;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    text-align: center;
+    position: relative;
+  }
+  .delet_like_plus .dv_plus1 .plus span {
+    position: absolute;
+    right: 12%;
+    top: -25%;
+    font-size: 2rem;
+  }
+  .chek_product .tv {
+    width: 54%;
+    height: 62%;
+  }
+  .product_info button {
+    width: 70%;
+    height: 30px;
+  }
+  .product_info h1{
+    font-size: 1.5rem;
+  }
+  .chek_product input {
+    height: 20px !important;
+    width: 27px;
+  }
+  .pay_product {
+    /* display: flex;
+    /* align-items: center; */
+    gap: 5px;
+    flex-direction: column;
+  }
+  .product_info {
+    gap: 1rem;
+  }
+  .delet_like_plus{
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 18%;
+    margin-left: 10%;
+  }
+  .delet_like_plus .dv_plus1{
+    margin: 0;
+  }
+  .us_1 {
+    gap: 32%;
+}
+.total{gap: 34%;}
+.pay_border button {
+  width: 96%;
+  align-self: center;
+}
+.delet_like{
+  gap: 21px;
+}
+.delet_like span {
+  font-size: 2rem;
+  margin-bottom: 6px;
+}
+.trash{
+  font-size: 1.4rem;
+}
 }
