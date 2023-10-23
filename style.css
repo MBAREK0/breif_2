@@ -828,7 +828,7 @@ p {
 }
 .section_1_without_select_all {
   display: flex;
-  gap: 3em;
+  gap: 2%;
 }
 .second_rectangle_phone {
   display: none;
