@@ -129,6 +129,16 @@ ul li a {
   justify-content: flex-start;
   overflow: scroll;
 }
+/* ======================================================================== hover ======= */
+.carts_groub2:hover {
+  background: #999999;
+}
+.g2:hover {
+  background: #999999;
+}
+.carts_groub3:hover {
+  background: #999999;
+}
 .groub1::-webkit-scrollbar {
   display: none;
 }
@@ -492,7 +502,10 @@ footer p {
   right: 2%;
 }
 .morocco p {
-  font-size: 1vw;
+  font-size: 10px;
+}
+#mapicon{
+  font-size: 10px;
 }
 .second_rectangle {
   border: 1px solid gray;
@@ -720,13 +733,6 @@ p {
   gap: 10px;
 }
 /* ==>payment=========================== */
-#pay_body {
-  min-height: 1000px;
-}
-#pay_footer {
-  position: relative;
-  top: 200px;
-}
 .select_all {
   display: flex;
   align-items: center;
@@ -834,37 +840,69 @@ p {
   display: none;
 }
 /* ------contact----- */
-.contact_us_title{
+.contact_us_title {
   text-align: center;
   margin: 28px 0;
 }
-.contact{
+.contact {
   display: grid;
   grid-template-columns: 30% 60%;
   gap: 10%;
 }
-.input_contact form{
+.input_contact form {
   max-width: 100%;
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin-bottom: 165px;
 }
-.input_contact form input,select,textarea{
+.input_contact form input,
+select,
+textarea {
   max-width: 100%;
   width: 90%;
   height: 3vh;
 }
-.input_contact form textarea{
+.input_contact form textarea {
   max-width: 100%;
   width: 90%;
   height: 8.5vw;
 }
-.send_a_message{
+.send_a_message {
   padding: 10px;
   border-radius: 19px;
   background-color: #334155;
   color: #fff;
   align-self: flex-end;
+}
+/* ================================ sidbare ================================== */
+#sidbare_phone {
+  display: none;
+}
+.list_header_phone {
+  align-items: center;
+  display: flex;
+  gap: 7px;
+}
+.list_header_phone ul {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  list-style-type: none;
+  align-items: center;
+  gap: 1.1vw;
+  padding: 0;
+}
+#sidbare_phone ul div {
+  width: 0.1vw;
+  height: 6vw;
+  align-self: center;
+  background-color: #000000;
+}
+.shoping_header_5 {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
 }
 @media (max-width: 767px) {
   body {
@@ -877,12 +915,49 @@ p {
     margin: 0;
     /* border: 1px saddlebrown solid; */
   }
+  #sidbare_phone {
+    display: flex;
+    position: absolute;
+    right: -540px;
+    transition: 0.5s;
+    height: 78%;
+  }
+  #sidbare_phone.mymbarek {
+    right: 2px;
+  }
+  #close_icon {
+    align-self: center;
+    font-size: 26px;
+    cursor: pointer;
+  }
+  #close_icon:hover {
+    font-size: 35px;
+    /* padding: 1px; */
+  }
 
-.info {
+  #sidbare_phone ul div {
+    width: 0.1vw;
+    height: 4vw;
+  }
+  .shoping_5 {
+    font-size: 4vw;
+  }
+  .list_header_phone ul li a {
+    font-size: 5vw;
+  }
+  .list_header_phone .flag {
+    width: 6.5vw;
+    height: 6.5vw;
+  }
+  .list_header_phone .shoping_header {
+    width: 6.5vw;
+    height: 6.5vw;
+  }
+  .info {
     display: flex;
     flex-direction: column;
     gap: 13px;
-}
+  }
   .pc_header {
     display: none;
   }
@@ -903,9 +978,15 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    overflow: hidden;
   }
   #sidebar_icon {
     font-size: 40px;
+    cursor: pointer;
+  }
+  #sidebar_icon.openicon {
+    display: none;
   }
   .serch {
     width: 75vw;
@@ -940,7 +1021,7 @@ p {
 
   .list-pic li {
     width: 80vw;
-    height: 6vw;
+    height: 10vw;
   }
   .groub2 {
     display: flex;
@@ -1352,7 +1433,6 @@ p {
   }
   .product_border {
     width: 100%;
-  
   }
 
   .pay_border {
@@ -1412,7 +1492,7 @@ p {
     width: 28vw;
     height: 30px;
   }
-  .product_info h1{
+  .product_info h1 {
     font-size: 5vw;
   }
   .chek_product input {
@@ -1428,38 +1508,43 @@ p {
   .product_info {
     gap: 4vw;
   }
-  .delet_like_plus{
+  .delet_like_plus {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
     gap: 18%;
     margin-left: 10%;
   }
-  .delet_like_plus .dv_plus1{
+  .delet_like_plus .dv_plus1 {
     margin: 0;
   }
   .us_1 {
-    gap:49%;
-}
-.total{
-gap: 50%;
-}
-.pay_border button {
-  width: 85vw;
-  align-self: center;
-}
-.delet_like{
-  gap: 21px;
-}
-.delet_like span {
-  font-size: 2rem;
-  margin-bottom: 6px;
-}
-.trash{
-  font-size: 1.4rem;
-}
-/* contact */
-.contact{display: flex;flex-direction: column;justify-content: center;gap: 22px;}
+    gap: 49%;
+  }
+  .total {
+    gap: 50%;
+  }
+  .pay_border button {
+    width: 85vw;
+    align-self: center;
+  }
+  .delet_like {
+    gap: 21px;
+  }
+  .delet_like span {
+    font-size: 2rem;
+    margin-bottom: 6px;
+  }
+  .trash {
+    font-size: 1.4rem;
+  }
+  /* contact */
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 22px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   body {
@@ -1474,6 +1559,71 @@ gap: 50%;
     margin: 0;
     /* border: 1px saddlebrown solid; */
   }
+  /* sidbare */
+  #sidebar_icon.openicon {
+    display: none;
+  }
+  .logo_sidebar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+  }
+  #sidbare_phone {
+    display: flex;
+  }
+  #sidbare_phone {
+    display: flex;
+    position: absolute;
+    right: -712px;
+    transition: 0.5s;
+    height: 78%;
+  }
+  #sidbare_phone.mymbarek {
+    right: 2px;
+  }
+  #close_icon {
+    align-self: center;
+    font-size: 26px;
+    cursor: pointer;
+  }
+  #close_icon:hover {
+    font-size: 35px;
+    /* padding: 1px; */
+  }
+
+  #sidbare_phone ul div {
+    width: 0.1vw;
+    height: 4vw;
+  }
+  .shoping_5 {
+    font-size: 4vw;
+  }
+  .list_header_phone ul li a {
+    font-size: 5vw;
+  }
+  .list_header_phone .flag {
+    width: 6.5vw;
+    height: 6.5vw;
+  }
+  .list_header_phone .shoping_header {
+    width: 6.5vw;
+    height: 6.5vw;
+  }
+  .list_header_phone ul li a {
+    font-size: 5vw;
+  }
+  .list_header_phone .flag {
+    width: 6.5vw;
+    height: 6.5vw;
+  }
+  .list_header_phone .shoping_header {
+    width: 6.5vw;
+    height: 6.5vw;
+  }
+  /* ========== */
   .pc_header {
     display: none;
   }
@@ -1488,6 +1638,9 @@ gap: 50%;
     z-index: 100;
     background-color: #fff;
     padding: 0 10px;
+  }
+  #sidbare_phone {
+    display: flex;
   }
   .logo_sidebar {
     width: 100%;
@@ -1570,6 +1723,7 @@ gap: 50%;
   footer p {
     text-align: center;
     font-size: 10px;
+    margin-top: 4vw;
   }
   .section1 {
     display: flex;
@@ -1895,8 +2049,8 @@ gap: 50%;
   .carts_groub2 {
     border-radius: 10px;
   }
-   /* payment----------------------------------------------------------------------------------------------------------------------------- */
-   .section_1_without_select_all {
+  /* payment----------------------------------------------------------------------------------------------------------------------------- */
+  .section_1_without_select_all {
     flex-direction: row;
   }
   .select_all {
@@ -1963,7 +2117,7 @@ gap: 50%;
     width: 70%;
     height: 30px;
   }
-  .product_info h1{
+  .product_info h1 {
     font-size: 1.5rem;
   }
   .chek_product input {
@@ -1979,32 +2133,34 @@ gap: 50%;
   .product_info {
     gap: 1rem;
   }
-  .delet_like_plus{
+  .delet_like_plus {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
     gap: 18%;
     margin-left: 10%;
   }
-  .delet_like_plus .dv_plus1{
+  .delet_like_plus .dv_plus1 {
     margin: 0;
   }
   .us_1 {
     gap: 32%;
-}
-.total{gap: 34%;}
-.pay_border button {
-  width: 96%;
-  align-self: center;
-}
-.delet_like{
-  gap: 21px;
-}
-.delet_like span {
-  font-size: 2rem;
-  margin-bottom: 6px;
-}
-.trash{
-  font-size: 1.4rem;
-}
+  }
+  .total {
+    gap: 34%;
+  }
+  .pay_border button {
+    width: 96%;
+    align-self: center;
+  }
+  .delet_like {
+    gap: 21px;
+  }
+  .delet_like span {
+    font-size: 2rem;
+    margin-bottom: 6px;
+  }
+  .trash {
+    font-size: 1.4rem;
+  }
 }

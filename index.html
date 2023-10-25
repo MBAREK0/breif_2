@@ -46,7 +46,27 @@
         <a href="index.html"
           ><img class="logo" src="picturs/Amazon.png" alt="amazon logo"
         /></a>
-        <i id="sidebar_icon" class="fa fa-navicon"></i>
+        <i id="sidebar_icon" class="fa fa-navicon" onclick="myoppen()"></i>
+        <div id="sidbare_phone">
+          <div class="list_header_phone">
+            <ul>
+              <li><a href="#">Sing In</a></li>
+              <div id="betwin_signin"></div>
+              <li><a href="#">Create account</a></li>
+            </ul>
+            <img class="flag" src="picturs/Morocco.png" alt="moroco flag" />
+            <div class="shoping_header_5">
+              <a href="payment.html"
+                ><img
+                  class="shoping_header"
+                  src="picturs/Shopping Cart.png"
+                  alt="Shopping Cart"
+              /></a>
+              <p class="shoping_5">5</p>
+            </div>
+            <i class="fa fa-close" id="close_icon" onclick="myoppen()"></i>
+          </div>
+        </div>
       </div>
       <div class="serch">
         <input
@@ -58,6 +78,8 @@
     </header>
     <!-- main---------------------------------------------------------------- -->
     <main>
+      <!--====================================== sidbare===================== -->
+
       <!-- list-pic ---------------------------------------------------------------- -->
       <div class="list-pic">
         <div class="Accessoires">
@@ -575,5 +597,6 @@
       </ul>
       <p>copy right 2023</p>
     </footer>
+    <script src="java.js"></script>
   </body>
 </html>
