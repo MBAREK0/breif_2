@@ -3,7 +3,7 @@ body {
   margin: 0 100px;
   /* background-color: rgb(139, 0, 102); */
 }
-#button_list_Accessoires{
+#button_list_Accessoires {
   border: 1px solid #eee;
   width: 82vw;
   height: 9.35vw;
@@ -11,14 +11,14 @@ body {
   background-color: #c9bf08;
   cursor: pointer;
 }
-#list_Accessoires_js.hidenn_list{
+#list_Accessoires_js.hidenn_list {
   display: none;
 }
-#button_list_Accessoires div{
-margin: auto;
-font-size: 6vw;
-text-transform: uppercase;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+#button_list_Accessoires div {
+  margin: auto;
+  font-size: 6vw;
+  text-transform: uppercase;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .phone_header {
   display: none;
@@ -521,7 +521,7 @@ footer p {
 .morocco p {
   font-size: 10px;
 }
-#mapicon{
+#mapicon {
   font-size: 10px;
 }
 .second_rectangle {
@@ -922,28 +922,32 @@ textarea {
   gap: 1vw;
 }
 /* ======================== panier ============================= */
-.panier{
+.panier {
   border: 1px solid none;
-  background-color:#c9bf08;
+  background-color: #c9bf08;
   display: flex;
   flex-direction: column;
 }
-.panier_title{
+.panier_title {
   text-align: center;
 }
-.panier_product{
+.panier_product {
   display: flex;
   font-size: 3vw;
   gap: 1vw;
 }
-.titlepanier_plus{
+.titlepanier_plus {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.panier_product .tv{
+
+.panier_product .tv {
   width: 43vw;
   height: 32vw;
+}
+.product_with_trush{
+  display: flex;
 }
 @media (max-width: 767px) {
   body {
@@ -956,11 +960,11 @@ textarea {
     margin: 0;
     /* border: 1px saddlebrown solid; */
   }
-  #button_list_Accessoires{
+  #button_list_Accessoires {
     display: flex;
     text-align: center;
   }
-  
+
   #sidbare_phone {
     display: flex;
     position: absolute;
