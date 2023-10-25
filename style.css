@@ -833,7 +833,39 @@ p {
 .second_rectangle_phone {
   display: none;
 }
-/* ----------- */
+/* ------contact----- */
+.contact_us_title{
+  text-align: center;
+  margin: 28px 0;
+}
+.contact{
+  display: grid;
+  grid-template-columns: 30% 60%;
+  gap: 10%;
+}
+.input_contact form{
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.input_contact form input,select,textarea{
+  max-width: 100%;
+  width: 90%;
+  height: 3vh;
+}
+.input_contact form textarea{
+  max-width: 100%;
+  width: 90%;
+  height: 8.5vw;
+}
+.send_a_message{
+  padding: 10px;
+  border-radius: 19px;
+  background-color: #334155;
+  color: #fff;
+  align-self: flex-end;
+}
 @media (max-width: 767px) {
   body {
     padding: 0;
@@ -845,6 +877,12 @@ p {
     margin: 0;
     /* border: 1px saddlebrown solid; */
   }
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
   .pc_header {
     display: none;
   }
@@ -1307,6 +1345,7 @@ p {
   /* payment */
   .section_1_without_select_all {
     flex-direction: column;
+    gap: 10px;
   }
   .select_all {
     width: 100%;
@@ -1419,6 +1458,8 @@ gap: 50%;
 .trash{
   font-size: 1.4rem;
 }
+/* contact */
+.contact{display: flex;flex-direction: column;justify-content: center;gap: 22px;}
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   body {
