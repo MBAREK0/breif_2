@@ -3,6 +3,23 @@ body {
   margin: 0 100px;
   /* background-color: rgb(139, 0, 102); */
 }
+#button_list_Accessoires{
+  border: 1px solid #eee;
+  width: 82vw;
+  height: 9.35vw;
+  display: none;
+  background-color: #c9bf08;
+  cursor: pointer;
+}
+#list_Accessoires_js.hidenn_list{
+  display: none;
+}
+#button_list_Accessoires div{
+margin: auto;
+font-size: 6vw;
+text-transform: uppercase;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 .phone_header {
   display: none;
 }
@@ -904,6 +921,30 @@ textarea {
   align-items: center;
   gap: 1vw;
 }
+/* ======================== panier ============================= */
+.panier{
+  border: 1px solid none;
+  background-color:#c9bf08;
+  display: flex;
+  flex-direction: column;
+}
+.panier_title{
+  text-align: center;
+}
+.panier_product{
+  display: flex;
+  font-size: 3vw;
+  gap: 1vw;
+}
+.titlepanier_plus{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.panier_product .tv{
+  width: 43vw;
+  height: 32vw;
+}
 @media (max-width: 767px) {
   body {
     padding: 0;
@@ -915,6 +956,11 @@ textarea {
     margin: 0;
     /* border: 1px saddlebrown solid; */
   }
+  #button_list_Accessoires{
+    display: flex;
+    text-align: center;
+  }
+  
   #sidbare_phone {
     display: flex;
     position: absolute;
